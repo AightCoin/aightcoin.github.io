@@ -1,0 +1,99 @@
+html,
+body {
+    background: rgb(33, 211, 83);
+    scroll-snap-type: y mandatory;
+}
+
+.aight {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    margin-left: -50px;
+    margin-top: -50px;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 300pt;
+    opacity: 0;
+    transition: opacity 500ms;
+    text-shadow: 25px 35px rgb(28, 65, 36);
+}
+
+.aight-coin {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+
+.aight-coin>img {
+    height: 100px;
+    width: 100px;
+    animation: glow 750ms linear 0s;
+    animation-iteration-count: 3;
+}
+
+.follow {
+    position: absolute;
+    right: 7%;
+    top: 10%;
+}
+
+.follow>i,
+.follow>a>i {
+    font-size: 20pt;
+    color: #ffffff;
+    text-shadow: 2px 2px rgb(64, 182, 89);
+    margin-right: 15px;
+}
+
+.follow>a {
+    text-decoration: none !important;
+}
+
+.navbar {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    bottom: 14%;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.navbar>a {
+    font-size: 18pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 2px 2px rgb(54, 129, 70);
+}
+
+@keyframes glow {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ambient {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
