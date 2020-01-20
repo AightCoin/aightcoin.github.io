@@ -1,2 +1,2 @@
-# aightcoin.github.io
+# AightCoin.com
 The new official AightCoin website.
